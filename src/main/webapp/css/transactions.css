@@ -1,0 +1,67 @@
+.transactions-page {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.transactions-header {
+    background: #1f2937;
+    color: white;
+    padding: 25px 30px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.transactions-header h1 {
+    margin: 0;
+}
+
+.transactions-table-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    overflow-x: auto;
+}
+
+.transactions-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.transactions-table th {
+    background: #1f2937;
+    color: white;
+    padding: 14px;
+    text-align: left;
+}
+
+.transactions-table td {
+    padding: 14px;
+    border-bottom: 1px solid #ddd;
+}
+
+.transactions-table tr:hover {
+    background: #f5f5f5;
+}
+
+.transactions-actions {
+    margin-top: 25px;
+}
+
+.transactions-actions a {
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    background: white;
+    color: #1f2937;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.transactions-actions a:hover {
+    background: #e9eef3;
+}

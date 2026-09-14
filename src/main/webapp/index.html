@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Personal Expense Manager</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .hero {
+            max-width: 1100px;
+            margin: 60px auto;
+            padding: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 50px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+        }
+
+        .hero-content {
+            flex: 1;
+        }
+
+        .hero-content .icon {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .hero-content h1 {
+            margin: 0 0 15px;
+            font-size: 42px;
+            color: #0f172a;
+        }
+
+        .hero-content h2 {
+            margin: 0 0 18px;
+            font-size: 25px;
+            color: #2563eb;
+        }
+
+        .hero-content p {
+            color: #64748b;
+            font-size: 17px;
+            line-height: 1.7;
+            max-width: 560px;
+        }
+
+        .dashboard-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 14px 25px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 9px;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        .dashboard-button:hover {
+            background: #1d4ed8;
+            transform: translateY(-2px);
+        }
+
+        .hero-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-image img {
+            width: 100%;
+            max-width: 430px;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .features {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .features h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #0f172a;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 25px 20px;
+            border-radius: 14px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(15, 23, 42, 0.07);
+            border: 1px solid #e2e8f0;
+        }
+
+        .feature-card .feature-icon {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .feature-card h3 {
+            margin: 8px 0;
+            color: #1e293b;
+        }
+
+        .feature-card p {
+            color: #64748b;
+            line-height: 1.5;
+            font-size: 14px;
+        }
+
+        @media (max-width: 800px) {
+            .hero {
+                margin: 25px 15px;
+                padding: 30px 25px;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-content p {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .hero-image {
+                order: -1;
+            }
+
+            .hero-image img {
+                max-width: 300px;
+            }
+
+            .feature-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 500px) {
+            .hero-content h1 {
+                font-size: 32px;
+            }
+
+            .hero-content h2 {
+                font-size: 21px;
+            }
+
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+<header class="header">
+    <h1>Personal Expense & Budget Manager</h1>
+</header>
+
+<section class="hero">
+
+
+    <div class="hero-content">
+
+        <div class="icon">💰</div>
+
+        <h1>Personal Expense & Budget Manager</h1>
+
+        <h2>Take control of your money.</h2>
+
+        <p>
+            Manage your income, track your expenses, set monthly budgets,
+            monitor savings goals and keep your finances organized
+            in one simple place.
+        </p>
+
+        <a href="dashboard" class="dashboard-button">
+            Open Dashboard →
+        </a>
+
+    </div>
+
+    <div class="hero-image">
+        <img src="images/finance-illustration.png"
+             alt="Personal finance management illustration">
+    </div>
+
+
+</section>
+
+<section class="features">
+
+
+    <h2>Everything You Need to Manage Your Money</h2>
+
+    <div class="feature-grid">
+
+        <div class="feature-card">
+            <div class="feature-icon">💰</div>
+            <h3>Track Income</h3>
+            <p>
+                Record and monitor your income sources easily.
+            </p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">💸</div>
+            <h3>Manage Expenses</h3>
+            <p>
+                Track your daily expenses and organize them by category.
+            </p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">💳</div>
+            <h3>Set Budgets</h3>
+            <p>
+                Create monthly budgets and keep your spending under control.
+            </p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">🎯</div>
+            <h3>Save Better</h3>
+            <p>
+                Set savings goals and monitor your progress toward them.
+            </p>
+        </div>
+
+    </div>
+
+
+</section>
+
+<footer class="footer">
+
+
+    <strong>Personal Expense & Budget Manager</strong>
+    <br>
+
+    Smartly manage your income, expenses and savings goals.
+    <br>
+
+    Developed by Samiksha
+
+
+</footer>
+
+</body>
+</html>
